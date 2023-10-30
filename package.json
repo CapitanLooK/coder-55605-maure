@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Curso Coderhouse Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "product": "nodemon ./desafios/ProductManager.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapitanLooK/coder-55605-maure.git"
+  },
+  "author": "Alejandro Maure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapitanLooK/coder-55605-maure/issues"
+  },
+  "homepage": "https://github.com/CapitanLooK/coder-55605-maure#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
