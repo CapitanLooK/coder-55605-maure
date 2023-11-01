@@ -1,0 +1,29 @@
+[
+  {
+    "title": "microfono",
+    "description": "microfono condenser",
+    "price": 1000,
+    "thumbnail": "url foto mic",
+    "code": 3,
+    "stock": 1,
+    "id": 0
+  },
+  {
+    "title": "parlante",
+    "description": "parlante de estudio",
+    "price": 5000,
+    "thumbnail": "url foto parlante",
+    "code": 5,
+    "stock": 1,
+    "id": 1
+  },
+  {
+    "title": "gabinete",
+    "description": "gabinete con vidrio templado",
+    "price": 2500,
+    "thumbnail": "url foto gabinete",
+    "code": 8,
+    "stock": 3,
+    "id": 2
+  }
+]

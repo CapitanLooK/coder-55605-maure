@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class ProductManager {
+export class ProductManager {
 
     constructor(path) {
         this.products = [];
@@ -28,7 +28,7 @@ class ProductManager {
         const productsReaded = JSON.parse(jsonReaded);
         const productList = productsReaded.map(product => product);
 
-        console.log('La lista de productos es: ', productList);
+        return productList
 
 
     }
@@ -41,7 +41,7 @@ class ProductManager {
 
         if (!findedId) return console.error(`el id ${id} que busca no existe (Not Found)`);
 
-        return console.log(`el producto con id ${id} es:`, findedId);
+        return findedId;
     };
 
     async updateProduct(id, updatedProduct) {
@@ -71,7 +71,7 @@ class ProductManager {
     }
 };
 
-const productManager = new ProductManager('./desafios/data/products.json');
+const productManager = new ProductManager('./data/products.json');
 
 
 // productManager.addProduct({
@@ -92,6 +92,14 @@ const productManager = new ProductManager('./desafios/data/products.json');
 //     stock: 1
 // })
 
+// productManager.addProduct({
+//     title: "gabinete",
+//     description: "gabinete con vidrio templado",
+//     price: 2500,
+//     thumbnail: "url foto gabinete",
+//     code: 8,
+//     stock: 3
+// })
 
 // productManager.updateProduct(2,   {
 //     title: 'parlante',
@@ -102,11 +110,4 @@ const productManager = new ProductManager('./desafios/data/products.json');
 //     stock: 1,
 //     id: 2
 //   })
-
-//productManager.deleteProduct(2)
-
-//productManager.getProductById(1)
-
-productManager.getProducts()
-
 
